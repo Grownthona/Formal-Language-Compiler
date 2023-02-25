@@ -511,49 +511,6 @@ int main()
                 }
             }
         }
-
-        istringstream stremstr(result_error);
-        string tokennize;
-        bool for_loop_found = false;
-        bool for_loop_error = false;
-        int semi =0;
-        while(getline(stremstr, tokennize, ' '))
-        {
-            new_vec.push_back(tokennize);
-            for_loop_found = true;
-            /*if(tokennize.find("for") != string::npos)
-            {
-                for(int h=0;h<tokennize.size();h++)
-                {
-                    //cout << tokennize[h] << endl;
-                    if(tokennize[3] != '(')
-                    {
-                        for_loop_error = true;
-                        cout << "Bracket not found after loop at line " << line << endl;
-                    }
-                    if(tokennize[h] == ';')
-                    {
-                        semi ++;
-                    }
-                }
-                if(semi >2)
-                {
-                    cout << "Error happened at for loop " << endl;
-                }
-            }
-            if(tokennize=="{"  && for_loop_found==true)
-            {
-                 //cout << "bracket not found after loop at line" << line_number << endl;
-            }
-            else
-            {
-                for_loop_error = true;
-            }
-            if(tokennize=="}"&& for_loop_found==true)
-            {
-                for_loop_found = false;
-            }
-            */
         }
 
     }
